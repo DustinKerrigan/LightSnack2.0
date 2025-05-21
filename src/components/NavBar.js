@@ -23,12 +23,36 @@ const NavBar = () => {
             <div className="container mx-auto flex justify-between items-center">
                 <div className="text-white text-2xl"><img src = 'homeLogo2.png' alt = "Logo" className = "h-14 w-auto"></img></div>
                 <div className="hidden md:flex space-x-4">
-                    <Link className={`font-lato transition-all duration-300 ease-in-out hover:text-black ${isScrolled ? 'text-white' : 'text-black'}`} to="/about">ABOUT</Link>
-                    <Link className={`font-lato transition-all duration-300 ease-in-out hover:text-black ${isScrolled ? 'text-white' : 'text-black'}`} to="/services">SOCIAL MEDIA</Link>
-                    <Link className={`font-lato transition-all duration-300 ease-in-out hover:text-black ${isScrolled ? 'text-white' : 'text-black'}`} to="/contact">CONTACT</Link>
-                    <Link className={`font-lato transition-all duration-300 ease-in-out hover:text-black ${isScrolled ? 'text-white' : 'text-black'}`} to="/contact">NIL</Link>
-                    <Link className={`font-lato transition-all duration-300 ease-in-out hover:text-black ${isScrolled ? 'text-white' : 'text-black'}`} to="/contact">PROGRAMS</Link>
-                    <Link className={`font-lato transition-all duration-300 ease-in-out hover:text-black ${isScrolled ? 'text-white' : 'text-black'}`} to="/contact">SHOP</Link>
+                    <Link className={`font-semibold relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 hover:after:w-full after:transition-all after:duration-300 
+                    ${isScrolled 
+                        ? 'text-white hover:text-black after:bg-black' 
+                        : 'text-black hover:text-red-600 after:bg-red-600'
+                    }`} to="/about">About</Link>
+                    <Link className={`font-semibold relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 hover:after:w-full after:transition-all after:duration-300 
+                    ${isScrolled 
+                        ? 'text-white hover:text-black after:bg-black' 
+                        : 'text-black hover:text-red-600 after:bg-red-600'
+                    }`} to="/services">Socials</Link>
+                    <Link className={`font-semibold relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 hover:after:w-full after:transition-all after:duration-300 
+                    ${isScrolled 
+                        ? 'text-white hover:text-black after:bg-black' 
+                        : 'text-black hover:text-red-600 after:bg-red-600'
+                    }`} to="/contact">Contact</Link>
+                    <Link className={`font-semibold relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 hover:after:w-full after:transition-all after:duration-300 
+                    ${isScrolled 
+                        ? 'text-white hover:text-black after:bg-black' 
+                        : 'text-black hover:text-red-600 after:bg-red-600'
+                    }`} to="/contact">NIL</Link>
+                    <Link className={`font-semibold relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 hover:after:w-full after:transition-all after:duration-300 
+                    ${isScrolled 
+                        ? 'text-white hover:text-black after:bg-black' 
+                        : 'text-black hover:text-red-600 after:bg-red-600'
+                    }`} to="/contact">Programs</Link>
+                    <Link className={`font-semibold relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 hover:after:w-full after:transition-all after:duration-300 
+                    ${isScrolled 
+                        ? 'text-white hover:text-black after:bg-black' 
+                        : 'text-black hover:text-red-600 after:bg-red-600'
+                    }`} to="/contact">Shop</Link>
                 </div>
                 <div className="md:hidden">
                     <button onClick={() => setIsOpen(!isOpen)} className="text-white">

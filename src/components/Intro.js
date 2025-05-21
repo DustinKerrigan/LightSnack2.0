@@ -4,7 +4,7 @@ import { UserCircleIcon } from '@heroicons/react/24/solid';
 const Intro = () => {
     return (
         
-        <section class="bg-white dark:bg-gray-900">
+        <section class="bg-transparent dark:bg-gray-900 ">
             <div class="container px-6 py-10">
                 <h1 className="text-3xl font-bold text-center mb-12">Welcome to Light Snack</h1>
 
