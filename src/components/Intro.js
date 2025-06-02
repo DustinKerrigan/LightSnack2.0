@@ -1,12 +1,11 @@
 import React from "react";
-import { UserCircleIcon } from '@heroicons/react/24/solid';
-/*https://themesbrand.com/zooki/layout/index-1.html*/
 const Intro = () => {
     return (
-        
-        <section class="bg-transparent dark:bg-gray-900 ">
-            <div class="container px-6 py-10">
-                <h1 className="text-3xl font-bold text-center mb-12">Welcome to Light Snack</h1>
+        <>
+        <div className ="pt-24">
+        <section class="bg-transparent dark:bg-gray-900 relative z-0">
+            <div class="container px-6 py-8">
+                <h1 className="text-3xl font-roboto text-center mb-12">Welcome</h1>
 
                 <p className="text-lg text-gray-600 text-center max-w-2xl mx-auto mb-16">"Our mission at Light Snack is to create a powerful fitness brand while revolutionizing the world of healthy snacks and supplements."</p>
                 
@@ -52,6 +51,36 @@ const Intro = () => {
                 </div>
             </div>
         </section>
+        <section className="py-16 bg-gradient-to-b from-white to-gray-50 relative z-0">
+            <div className="container mx-auto px-6">
+                <div className="max-w-4xl mx-auto border-2 border-gray-200 rounded-lg p-8 bg-white shadow-lg">
+                    <h2 className="text-3xl font-bold text-center mb-8 relative">
+                        About Light Snack
+                        <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-20 h-1 bg-red-600"></div>
+                    </h2>
+                    
+                    <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
+                        <div className="flex flex-col md:flex-row items-center gap-8">
+                            <div className="md:w-1/2">
+                                <img 
+                                    src="modernLogo.PNG" 
+                                    alt="Light Snack" 
+                                    className="rounded-lg shadow-md w-full h-auto object-cover"
+                                />
+                            </div>
+                            <div className="md:w-1/2 space-y-4">
+                                <p className="text-gray-600 leading-relaxed">
+                                    Your about paragraph goes here. This section will include a smooth transition
+                                    and modern layout with responsive design.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </div>
+        </>
     );
 }
 

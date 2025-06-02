@@ -19,7 +19,7 @@ const NavBar = () => {
         };
     }, []);
     return (
-        <nav className={`p-4 sticky top-0 transition-colors duration-300 ${isScrolled ? 'bg-red-600 text-white border-white' : 'bg-white text-black'}`}>
+        <nav className={`p-4 fixed top-0 w-full transition-colors duration-300 z-50 ${isScrolled ? 'bg-red-600 text-white border-white' : 'bg-white text-black'}`}>
             <div className="container mx-auto flex justify-between items-center">
                 <div className="text-white text-2xl"><img src = 'homeLogo2.png' alt = "Logo" className = "h-14 w-auto"></img></div>
                 <div className="hidden md:flex space-x-4">
