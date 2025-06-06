@@ -2,10 +2,23 @@ import React from "react";
 const Intro = () => {
     return (
         <>
+        <div
+            className="min-h-screen relative"
+            style={{
+                backgroundImage: `url('/slide4.JPG')`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                backgroundAttachment: 'fixed'
+            }}
+        >
+
+        <div className="absolute inset-0 bg-gradient-to-b from-white via-white/40 to-white/30 z-0"></div>
+
+        <div className="relative z-10">
         <div className ="pt-24">
         <section class="bg-transparent dark:bg-gray-900 relative z-0">
             <div class="container px-6 py-8">
-                <h1 className="text-3xl font-roboto text-center mb-12">Welcome</h1>
+                <h1 className="text-3xl font-bold text-center mb-12">Welcome</h1>
 
                 <p className="text-lg text-gray-600 text-center max-w-2xl mx-auto mb-16">"Our mission at Light Snack is to create a powerful fitness brand while revolutionizing the world of healthy snacks and supplements."</p>
                 
@@ -53,32 +66,33 @@ const Intro = () => {
         </section>
         <section className="py-16 bg-gradient-to-b from-white to-gray-50 relative z-0">
             <div className="container mx-auto px-6">
-                <div className="max-w-4xl mx-auto border-2 border-gray-200 rounded-lg p-8 bg-white shadow-lg">
-                    <h2 className="text-3xl font-bold text-center mb-8 relative">
-                        About Light Snack
-                        <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-20 h-1 bg-red-600"></div>
-                    </h2>
-                    
-                    <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
-                        <div className="flex flex-col md:flex-row items-center gap-8">
-                            <div className="md:w-1/2">
-                                <img 
-                                    src="modernLogo.PNG" 
-                                    alt="Light Snack" 
-                                    className="rounded-lg shadow-md w-full h-auto object-cover"
-                                />
-                            </div>
-                            <div className="md:w-1/2 space-y-4">
-                                <p className="text-gray-600 leading-relaxed">
-                                    Your about paragraph goes here. This section will include a smooth transition
-                                    and modern layout with responsive design.
-                                </p>
-                            </div>
+                <div className="max-w-6xl mx-auto p-8">
+                    <div className="relative flex flex-col md:flex-row gap-8">
+                        <div className="md:w-1/2 relative">
+                            <img 
+                                src="slide1.PNG" 
+                                alt="Light Snack" 
+                                className="w-full h-full object-cover rounded-lg shadow-xl"
+                            />
+                            <h2 className="absolute -right-[16rem] -top-2 text-6xl font-bold tracking-widest z-10">
+                            <span className="pb-4 border-b-4 border-red-600">ABOUT</span> US
+                            </h2>
                         </div>
+        
+                        <div className="md:w-1/2 space-y-6 md:pt-32">        
+                            <p className="text-gray-600 leading-relaxed text-lg mt-16">
+                                Welcome to Light Snack, a brand that represents overcoming obstacles in life. We believe that any goal, big or small, can be accomplished when looked at as a "Light Snack" - something easily manageable and within reach. Our company was founded by Cristian Orth, a former Division 1 football player, turned endurance athlete. At Light Snack, we understand that life is full of challenges, whether it be in the form of physical goals or other aspirations. However, we believe that these obstacles can be tackled and overcome when viewed as a Light Snack. That is why we aim to inspire and motivate individuals to reach their full potential by embracing the idea of Light Snacking. Whether you're looking for workout gear, nutrition tips, or just some motivation to get started, Light Snack has got you covered. So, grab a snack, and let's get started on your journey to reaching your full potential!
+                            </p>
+                        </div>
+                    </div>
+                    <div className="flex justify-end mt-12">
+                        <div className="w-24 h-2 bg-red-600"></div>
                     </div>
                 </div>
             </div>
         </section>
+        </div>
+        </div>
         </div>
         </>
     );
