@@ -32,11 +32,6 @@ const NavBar = () => {
                     ${isScrolled 
                         ? 'text-white hover:text-black after:bg-black' 
                         : 'text-black hover:text-red-600 after:bg-red-600'
-                    }`} to="/services">Socials</Link>
-                    <Link className={`font-semibold relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 hover:after:w-full after:transition-all after:duration-300 
-                    ${isScrolled 
-                        ? 'text-white hover:text-black after:bg-black' 
-                        : 'text-black hover:text-red-600 after:bg-red-600'
                     }`} to="/contact">Contact</Link>
                     <Link className={`font-semibold relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 hover:after:w-full after:transition-all after:duration-300 
                     ${isScrolled 

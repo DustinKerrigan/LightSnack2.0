@@ -65,6 +65,23 @@ const Intro = () => {
             </div>
         </section>
         <section className="py-16 bg-gradient-to-b from-white to-gray-50 relative z-0">
+            <div className="absolute right-0 top-0 flex flex-col gap-2 z-50 md:mr-4 md:mt-4">
+                <a href="https://www.tiktok.com/@lightsnack" 
+                className="bg-black text-white p-3 hover:translate-x-[-8px] transition-transform duration-300 flex items-center gap-2">
+                    <i className="fab fa-tiktok text-xl"></i>
+                    <span className="hidden group-hover:block">TikTok</span>
+                </a>
+                <a href="https://www.linkedin.com/company/lightsnack" 
+                className="bg-[#0077b5] text-white p-3 hover:translate-x-[-8px] transition-transform duration-300 flex items-center gap-2">
+                    <i className="fab fa-linkedin-in text-xl"></i>
+                    <span className="hidden group-hover:block">LinkedIn</span>
+                </a>
+                <a href="https://www.instagram.com/lightsnack" 
+                className="bg-[#E4405F] text-white p-3 hover:translate-x-[-8px] transition-transform duration-300 flex items-center gap-2">
+                    <i className="fab fa-instagram text-xl"></i>
+                    <span className="hidden group-hover:block">Instagram</span>
+                </a>
+            </div>
             <div className="container mx-auto px-6">
                 <div className="max-w-6xl mx-auto p-8">
                     <div className="relative flex flex-col md:flex-row gap-8">
