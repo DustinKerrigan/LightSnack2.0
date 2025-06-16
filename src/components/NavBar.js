@@ -47,7 +47,7 @@ const NavBar = () => {
                     ${isScrolled 
                         ? 'text-white hover:text-black after:bg-black' 
                         : 'text-black hover:text-red-600 after:bg-red-600'
-                    }`} to="/contact">Shop</Link>
+                    }`} to="/contact"><i className="fas fa-shopping-cart text-xl"></i></Link>
                 </div>
                 <div className="md:hidden">
                     <button onClick={() => setIsOpen(!isOpen)} className="text-white">
@@ -60,11 +60,10 @@ const NavBar = () => {
             {(isOpen) && (
                 <div className="md:hidden"> {/*if the menu is open (mobile only) */}
                     <link className="block text-white p-2" to="/about">About</link>
-                    <link className="block text-white p-2" to="/services">Social Media</link>
                     <link className="block text-white p-2" to="/contact">Contact</link>
                     <link className="block text-white p-2" to="/contact">NIL</link>
                     <link className="block text-white p-2" to="/contact">Programs</link>
-                    <link className="block text-white p-2" to="/contact">Shop</link>
+                    <link className="block text-white p-2" to="/contact"><i className="fas fa-shopping-cart text-xl"></i></link>
                 </div>
             )}
         </nav>
