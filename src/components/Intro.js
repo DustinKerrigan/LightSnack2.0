@@ -1,4 +1,6 @@
 import React from "react";
+import Contact from './Contact';
+
 const Intro = () => {
     return (
         <>
@@ -111,6 +113,7 @@ const Intro = () => {
         </div>
         </div>
         </div>
+        <Contact />
         </>
     );
 }
