@@ -1,12 +1,7 @@
-### `npm start`
+### Light Snack 1.0
+(http://lightsnack.net)
 
-Runs the app in the development mode.
+### Want to run dev version?
+Clone project into IDE
+Run `npm start` in the terminal
 Open [http://localhost:3000](http://localhost:3000) to view it in browser.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.
