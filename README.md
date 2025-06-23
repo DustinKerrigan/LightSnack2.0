@@ -1,7 +1,7 @@
 ### Light Snack 1.0
-(http://lightsnack.net)
+(https://lightsnack.net)
 
 ### Want to run dev version?
-Clone project into IDE
-Run `npm start` in the terminal
-Open [http://localhost:3000](http://localhost:3000) to view it in browser.
+#1. Clone project into IDE
+#2. Run `npm start` in the terminal
+#3. Open [http://localhost:3000](http://localhost:3000) to view it in browser.
