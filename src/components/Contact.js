@@ -1,6 +1,15 @@
 import React from 'react';
 
 const Contact = () => {
+    //using state variable to control flash message visibility
+    const [showFlash, setShowFlash] = React.useState(false);
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        //in the future API stuff will go here
+        setShowFlash(true);
+        setTimeout(() => setShowFlash(false), 3000); //hide flash message after 3 seconds
+        e.target.reset(); //reset form fields
+    };
     return (
         <section className="py-16 bg-gradient-to-b from-white to-gray-50 relative z-0">
             <div className="container mx-auto px-6">
@@ -8,7 +17,15 @@ const Contact = () => {
                     <h2 className="text-6xl font-bold tracking-widest mb-16">
                         <span className="pb-4 border-b-4 border-red-600">CONTACT</span> US
                     </h2>
-                    <form className="space-y-6">
+                    {/* successful form submission flash message */}
+                    {showFlash && (
+                        <div className="mb-6 flex justify-center">
+                            <div className="bg-green-500 text-white px-6 py-3 rounded shadow-lg animate-fade-in">
+                                Message sent successfully!
+                            </div>
+                        </div>
+                    )}
+                    <form className="space-y-6" onSubmit={handleSubmit}>
                         <div className="grid grid-cols-2 gap-4">
                             <div className="flex flex-col">
                                 <label className="mb-1 text-sm">
