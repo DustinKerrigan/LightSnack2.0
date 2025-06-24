@@ -20,10 +20,22 @@ const Intro = () => {
         <div className ="pt-24">
         <section class="bg-transparent dark:bg-gray-900 relative z-0">
             <div class="container px-6 py-8">
-                <h1 className="text-3xl font-bold text-center mb-12">Welcome</h1>
-
-                <p className="text-lg text-gray-600 text-center max-w-2xl mx-auto mb-16">"Our mission at Light Snack is to create a powerful fitness brand while revolutionizing the world of healthy snacks and supplements."</p>
-                
+                <h1 className="text-4xl md:text-5xl font-anton text-center mb-4">Welcome</h1>
+                <h2 className="text-xl md:text-2xl text-center font-bebas mb-4">to Light Snack</h2>
+                <p className="text-lg text-gray-600 text-center max-w-2xl mx-auto mb-6">
+                    "Our mission at Light Snack is to create a powerful fitness brand while revolutionizing the world of healthy snacks and supplements."
+                </p>
+                <div className="flex justify-center mb-12">
+                    <a
+                        href="#about-section"
+                        className="relative inline-block rounded-full p-[2px] bg-gradient-to-r from-red-400 via-red-600 to-red-800 group"
+                        style={{ overflow: 'hidden' }}
+                    >
+                        <span className="block rounded-full bg-black px-10 py-3 text-white font-semibold text-lg transition-colors duration-300 group-hover:bg-red-700">
+                            Learn More
+                        </span>
+                    </a>
+                </div>
                 <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 sm:grid-cols-2 lg:grid-cols-3">
                     <div className="flex flex-col items-center p-6 space-y-4 bg-white rounded-xl shadow-lg transition-transform duration-300 hover:scale-105 border-2 border-black">
                             <div className="w-32 h-32 bg-gray-100 rounded-full overflow-hidden flex items-center justify-center"> 
@@ -66,7 +78,7 @@ const Intro = () => {
                 </div>
             </div>
         </section>
-        <section className="py-16 bg-gradient-to-b from-white to-gray-50 relative z-0">
+        <section id="about-section" className="py-16 bg-gradient-to-b from-white to-gray-50 relative z-0">
             <div className="absolute right-0 top-0 flex flex-col gap-2 z-50 md:mr-4 md:mt-4">
                 <a href="https://www.tiktok.com/@cristian.orth?lang=en" 
                 className="bg-black text-white p-3 hover:translate-x-[-8px] transition-transform duration-300 flex items-center gap-2">
