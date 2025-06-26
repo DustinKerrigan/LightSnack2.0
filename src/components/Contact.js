@@ -11,7 +11,7 @@ const Contact = () => {
         e.target.reset(); //reset form fields
     };
     return (
-        <section className="py-16 bg-gradient-to-b from-white to-gray-50 relative z-0">
+        <section id="contact-section" className="py-16 bg-gradient-to-b from-white to-gray-50 relative z-0">
             <div className="container mx-auto px-6">
                 <div className="max-w-6xl mx-auto p-8">
                     <h2 className="text-6xl font-bold tracking-widest mb-16">

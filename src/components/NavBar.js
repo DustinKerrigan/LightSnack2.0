@@ -23,16 +23,26 @@ const NavBar = () => {
             <div className="container mx-auto flex justify-between items-center">
                 <div className="text-white text-2xl"><img src = 'homeLogo2.png' alt = "Logo" className = "h-14 w-auto"></img></div>
                 <div className="hidden md:flex space-x-4">
-                    <Link className={`font-semibold relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 hover:after:w-full after:transition-all after:duration-300 
-                    ${isScrolled 
-                        ? 'text-white hover:text-black after:bg-black' 
-                        : 'text-black hover:text-red-600 after:bg-red-600'
-                    }`} to="/about">About</Link>
-                    <Link className={`font-semibold relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 hover:after:w-full after:transition-all after:duration-300 
-                    ${isScrolled 
-                        ? 'text-white hover:text-black after:bg-black' 
-                        : 'text-black hover:text-red-600 after:bg-red-600'
-                    }`} to="/contact">Contact</Link>
+                    <a
+                        className={`font-semibold relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 hover:after:w-full after:transition-all after:duration-300 
+                        ${isScrolled 
+                            ? 'text-white hover:text-black after:bg-black' 
+                            : 'text-black hover:text-red-600 after:bg-red-600'
+                        }`}
+                        href="#about-section"
+                    >
+                        About
+                    </a>
+                    <a
+                        className={`font-semibold relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 hover:after:w-full after:transition-all after:duration-300 
+                        ${isScrolled 
+                            ? 'text-white hover:text-black after:bg-black' 
+                            : 'text-black hover:text-red-600 after:bg-red-600'
+                        }`}
+                        href="#contact-section"
+                    >
+                        Contact
+                    </a>
                     <Link className={`font-semibold relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 hover:after:w-full after:transition-all after:duration-300 
                     ${isScrolled 
                         ? 'text-white hover:text-black after:bg-black' 
