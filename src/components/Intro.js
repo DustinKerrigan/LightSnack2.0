@@ -16,7 +16,7 @@ const Intro = () => {
 
         <div className="absolute inset-0 bg-gradient-to-b from-white via-white/40 to-white/30 z-0"></div>
 
-        <div className="relative z-10">
+        <div id="welcome" className="relative z-10">
         <div className ="pt-24">
         <section class="bg-transparent dark:bg-gray-900 relative z-0">
             <div class="container px-6 py-8">
