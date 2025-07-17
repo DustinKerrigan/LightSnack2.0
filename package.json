@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@emailjs/browser": "^4.4.1",
     "@heroicons/react": "^2.2.0",
     "alpinejs": "^3.14.8",
     "cra-template": "1.2.0",

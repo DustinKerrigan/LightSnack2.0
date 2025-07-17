@@ -25,13 +25,14 @@ const Contact = () => {
                             </div>
                         </div>
                     )}
-                    <form className="space-y-6" onSubmit={handleSubmit}>
+                    <form action="https://formsubmit.co/support@lightsnack.net" className="space-y-6" method="POST">
                         <div className="grid grid-cols-2 gap-4">
                             <div className="flex flex-col">
                                 <label className="mb-1 text-sm">
                                     First Name <span className="text-red-600">*</span>
                                 </label>
                                 <input 
+                                    name="firstName" 
                                     type="text"
                                     className="p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent"
                                     required
@@ -42,6 +43,7 @@ const Contact = () => {
                                     Last Name <span className="text-red-600">*</span>
                                 </label>
                                 <input 
+                                    name="lastName" 
                                     type="text"
                                     className="p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent"
                                     required
@@ -54,6 +56,7 @@ const Contact = () => {
                                 E-mail <span className="text-red-600">*</span>
                             </label>
                             <input 
+                                name="email" 
                                 type="email"
                                 placeholder="example@example.com"
                                 className="p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent"
@@ -66,6 +69,7 @@ const Contact = () => {
                                 Message <span className="text-red-600">*</span>
                             </label>
                             <textarea 
+                                name="message" 
                                 rows="6"
                                 className="p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent resize-none"
                                 required
