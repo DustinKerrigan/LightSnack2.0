@@ -3,9 +3,19 @@ import React from 'react';
 const Contact = () => {
     //using state variable to control flash message visibility
     const [showFlash, setShowFlash] = React.useState(false);
-    const handleSubmit = (e) => {
+        const handleSubmit = async (e) => {
         e.preventDefault();
-        //in the future API stuff will go here
+        const data = new FormData(e.target);
+        await fetch('http://localhost:5000/api/contact', {
+            method: 'POST',
+            body: JSON.stringify({
+            firstName: data.get('firstName'),
+            lastName: data.get('lastName'),
+            email: data.get('email'),
+            message: data.get('message')
+        }),
+        headers: { 'Content-Type': 'application/json' }
+    });
         setShowFlash(true);
         setTimeout(() => setShowFlash(false), 3000); //hide flash message after 3 seconds
         e.target.reset(); //reset form fields
@@ -25,7 +35,7 @@ const Contact = () => {
                             </div>
                         </div>
                     )}
-                    <form action="https://formsubmit.co/support@lightsnack.net" className="space-y-6" method="POST">
+                    <form className="space-y-6" onSubmit={handleSubmit}>
                         <div className="grid grid-cols-2 gap-4">
                             <div className="flex flex-col">
                                 <label className="mb-1 text-sm">
