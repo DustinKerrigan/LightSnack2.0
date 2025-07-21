@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 //import { BrowserRouter as Router } from 'react-router-dom';
 const NavBar = () => {
-    const [isOpen, setIsOpen] = useState(false); // Ensure this state is defined
-    const [isScrolled, setIsScrolled] = useState(false);
+    const [isOpen, setIsOpen] = useState(false); //this is the state for the mobile menu
+    const [isScrolled, setIsScrolled] = useState(false); //state for pc menu
     useEffect(() => {
         const handleScroll = () => {
             if (window.scrollY > 0){
@@ -68,7 +68,7 @@ const NavBar = () => {
                 </div>
             </div>
             {(isOpen) && (
-                <div className="md:hidden"> {/*if the menu is open (mobile only) */}
+                <div className="md:hidden"> {/*if the menu is open (mobile only, may need to enhance this) */}
                     <link className="block text-white p-2" to="/about">About</link>
                     <link className="block text-white p-2" to="/contact">Contact</link>
                     <link className="block text-white p-2" to="/contact">NIL</link>

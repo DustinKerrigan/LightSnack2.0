@@ -8,7 +8,7 @@ app.use(cors());
 
 app.post('/api/contact', async (req, res) => {
   const { firstName, lastName, email, message } = req.body;
-  console.log('Received contact form:', req.body); // Debug incoming data
+  console.log('Received contact form:', req.body); 
 
   const transporter = nodemailer.createTransport({
     host: 'smtp.zoho.com',
@@ -22,8 +22,8 @@ app.post('/api/contact', async (req, res) => {
 
   try {
     await transporter.sendMail({
-      from: 'support@lightsnack.net', // Use your Zoho email here
-      replyTo: email, // Set reply-to to user's email
+      from: 'support@lightsnack.net', 
+      replyTo: email, 
       to: 'support@lightsnack.net',
       subject: `Contact Form: ${firstName} ${lastName}`,
       text: `From: ${email}\n\n${message}`
