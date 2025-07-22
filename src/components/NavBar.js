@@ -43,11 +43,16 @@ const NavBar = () => {
                     >
                         Contact
                     </a>
-                    <Link className={`font-semibold relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 hover:after:w-full after:transition-all after:duration-300 
-                    ${isScrolled 
-                        ? 'text-white hover:text-black after:bg-black' 
-                        : 'text-black hover:text-red-600 after:bg-red-600'
-                    }`} to="/contact">NIL</Link>
+                    <Link
+                        className={`font-semibold relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 hover:after:w-full after:transition-all after:duration-300 
+                            ${isScrolled 
+                            ? 'text-white hover:text-black after:bg-black' 
+                            : 'text-black hover:text-red-600 after:bg-red-600'
+                            }`}
+                        to="/nil"
+                        >
+                        NIL
+                    </Link>
                     <Link className={`font-semibold relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 hover:after:w-full after:transition-all after:duration-300 
                     ${isScrolled 
                         ? 'text-white hover:text-black after:bg-black' 
@@ -71,7 +76,7 @@ const NavBar = () => {
                 <div className="md:hidden"> {/*if the menu is open (mobile only, may need to enhance this) */}
                     <link className="block text-white p-2" to="/about">About</link>
                     <link className="block text-white p-2" to="/contact">Contact</link>
-                    <link className="block text-white p-2" to="/contact">NIL</link>
+                    <link className="block text-white p-2" to="/nil">NIL</link>
                     <link className="block text-white p-2" to="/contact">Programs</link>
                     <link className="block text-white p-2" to="/contact"><i className="fas fa-shopping-cart text-xl"></i></link>
                 </div>
