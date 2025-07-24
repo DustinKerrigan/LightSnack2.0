@@ -12,6 +12,28 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.perspective {
+  perspective: 1200px;
+}
+.card-flip {
+  transition: transform 0.7s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+.card-flip:hover {
+  transform: rotateY(180deg);
+}
+.card-front, .card-back {
+  backface-visibility: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.card-back {
+  transform: rotateY(180deg);
+}
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
