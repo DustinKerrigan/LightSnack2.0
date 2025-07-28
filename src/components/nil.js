@@ -1,3 +1,7 @@
+import { useNavigate } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+
 const athletes = [
     {
         id: 1,
@@ -13,9 +17,40 @@ const athletes = [
     }
 ];
 
-const Nil = () => (
-    <section id="nil-section">
+const Nil = () => {
+    const navigate = useNavigate();
+    return (
+    <section id="nil-section" className="relative">
+        {/* Wrapper div to hold bg image */}
+            <div className="relative min-h-screen">
+                {/* Background image div */}
+                <div
+                    className="absolute inset-0 bg-cover bg-center"
+                    style={{
+                        backgroundImage: "url('modernLogo.PNG')",
+                        opacity: 0.15,
+                        pointerEvents: 'none',
+                        zIndex: 0,            
+                    }}
+                   
+                /> 
         <div className="min-h-screen bg-gradient-to-b from-white to-gray-100 py-12 pt-24">
+            {/*buttons up top*/}
+                <div className="flex justify-between items-center px-6 mb-6">
+                    <button
+                        onClick={() => navigate('/')}
+                        className="bg-red-600 hover:bg-red-700 text-white font-bebas py-2 px-4 rounded-lg shadow transition"
+                    >
+                        ← Back to Home
+                    </button>
+                    <button
+                        onClick={() => navigate('/shop')} 
+                        className="text-black hover:text-red-600 transition text-xl"
+                        aria-label="Go to Shop"
+                    >
+                        <FontAwesomeIcon icon={faShoppingCart} />
+                    </button>
+                </div>
             <h1 className="text-4xl font-bebas text-black text-center mb-10">Our Athletes</h1>
             <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 px-4">
                 {athletes.map((athlete) => (
@@ -67,10 +102,14 @@ const Nil = () => (
                             </div>
                         </div>
                     </div>
+                    
                 ))}
+                
             </div>
+            
         </div>
+    </div>
     </section>
-);
-
+    );
+};
 export default Nil;

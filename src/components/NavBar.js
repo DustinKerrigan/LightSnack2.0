@@ -74,11 +74,11 @@ const NavBar = () => {
             </div>
             {(isOpen) && (
                 <div className="md:hidden"> {/*if the menu is open (mobile only, may need to enhance this) */}
-                    <link className="block text-white p-2" to="/about">About</link>
-                    <link className="block text-white p-2" to="/contact">Contact</link>
-                    <link className="block text-white p-2" to="/nil">NIL</link>
-                    <link className="block text-white p-2" to="/contact">Programs</link>
-                    <link className="block text-white p-2" to="/contact"><i className="fas fa-shopping-cart text-xl"></i></link>
+                    <Link className="block text-white p-2" to="/about">About</Link>
+                    <Link className="block text-white p-2" to="/contact">Contact</Link>
+                    <Link className="block text-white p-2" to="/nil">NIL</Link>
+                    <Link className="block text-white p-2" to="/contact">Programs</Link>
+                    <Link className="block text-white p-2" to="/contact"><i className="fas fa-shopping-cart text-xl"></i></Link>
                 </div>
             )}
         </nav>
