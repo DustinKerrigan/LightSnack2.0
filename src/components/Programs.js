@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
-import { ChevronDown, ChevronUp, Home, ShoppingCart } from 'lucide-react';
+import { ChevronDown, ChevronUp} from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 
 const Programs = () => {
   const [activeSection, setActiveSection] = useState(null); //state for the dropdown menus
-
+  const navigate = useNavigate();
   const toggleSection = (index) => {
     setActiveSection(activeSection === index ? null : index);
   };
@@ -36,25 +39,24 @@ const Programs = () => {
   ];
 
   return (
+    
     <div className="min-h-screen bg-gray-100">
-      {/* Header */}
-      <header className="bg-black text-white p-4 rounded-b-lg">
-        <div className="flex items-center justify-start">
-          <a 
-            href="https://lightsnack.net/" 
-            className="text-white hover:text-gray-300 transition-colors mr-4"
-            aria-label="Home"
+      {/*buttons up top*/}
+      <header>
+        <div className="flex justify-between items-center px-6 mt-2">
+          <button
+              onClick={() => navigate('/')}
+              className="bg-red-600 hover:bg-red-700 text-white font-bebas py-2 px-4 rounded-lg shadow transition"
           >
-            <Home size={24} />
-          </a>
-          <a 
-            href="https://lightsnack.net/shop.html" 
-            className="text-white hover:text-gray-300 transition-colors mr-6"
-            aria-label="Shop"
+              ← Back to Home
+          </button>
+          <button
+              onClick={() => navigate('/shop')} 
+              className="text-black hover:text-red-600 transition text-xl"
+              aria-label="Go to Shop"
           >
-            <ShoppingCart size={24} />
-          </a>
-          <h1 className="text-2xl font-medium">Light Snack Programs</h1>
+              <FontAwesomeIcon icon={faShoppingCart} />
+          </button>
         </div>
       </header>
 
