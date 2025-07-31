@@ -39,42 +39,43 @@ const Programs = () => {
   ];
 
   return (
-    
-    <div className="min-h-screen bg-gray-100">
-      {/*buttons up top*/}
-      <header>
-        <div className="flex justify-between items-center px-6 mt-2">
-          <button
+    <section className="relative min-h-screen">
+        {/* Background image div */}
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage: "url('/modernLogo.PNG')",
+            opacity: 0.15,
+            pointerEvents: 'none',
+            zIndex: 0,
+          }}
+        ></div>
+        
+        <div className="relative z-10 min-h-screen py-12 pt-12">
+          {/*buttons up top*/}
+          <div className="flex justify-between items-center px-6 mb-6">
+            <button
               onClick={() => navigate('/')}
               className="bg-red-600 hover:bg-red-700 text-white font-bebas py-2 px-4 rounded-lg shadow transition"
-          >
+            >
               ← Back to Home
-          </button>
-          <button
+            </button>
+            <button
               onClick={() => navigate('/shop')} 
               className="text-black hover:text-red-600 transition text-xl"
               aria-label="Go to Shop"
-          >
+            >
               <FontAwesomeIcon icon={faShoppingCart} />
-          </button>
-        </div>
-      </header>
-
-      {/* Main Container with Background */}
-      <div 
-        className="min-h-screen flex flex-col items-center justify-center py-8 px-4 bg-fixed bg-cover bg-center"
-        style={{
-          backgroundImage: "url('/modernLogo.PNG')",
-          backgroundAttachment: 'fixed'
-        }}
-      >
-        <div className="w-full max-w-4xl space-y-8">
+            </button>
+          </div>
+    <h1 className="text-4xl font-bebas text-black text-center mb-10">Custom Programs</h1>
+        <div className="w-full max-w-4xl space-y-8 mx-auto px-4">
           {programs.map((program, index) => (
             <div 
               key={index}
               className="bg-white bg-opacity-90 backdrop-blur-sm rounded-lg shadow-lg p-8 transition-all duration-300 hover:shadow-xl"
             >
-              {/* Section Header */}
+              {/*section heading*/}
               <div 
                 className="flex items-center justify-between cursor-pointer group"
                 onClick={() => toggleSection(index)}
@@ -91,7 +92,7 @@ const Programs = () => {
                 </div>
               </div>
 
-              {/* Expandable Details */}
+              {/*drop down menus*/}
               <div 
                 className={`overflow-hidden transition-all duration-500 ease-in-out ${
                   activeSection === index 
@@ -131,7 +132,8 @@ const Programs = () => {
           ))}
         </div>
       </div>
-    </div>
+    
+    </section>
   );
 };
 
