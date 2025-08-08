@@ -1,0 +1,64 @@
+/*for mobile devices*/
+@media screen and (max-width: 640px) {
+    .container {
+        @apply px-4;
+    }
+    h1 {
+        @apply text-3xl;
+    }
+
+    h2 {
+        @apply text-2xl;
+    }
+
+    .section-padding {
+        @apply py-8 px-4;
+    }
+
+    .social-links {
+        @apply right-2 top-2;
+    }
+
+    /* Mobile-specific social media icon adjustments */
+    .social-media-container {
+        position: fixed;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .social-media-link {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: width 0.3s ease;
+    }
+
+    .social-media-link:hover {
+        width: 120px;
+    }
+
+    .social-media-icon {
+        font-size: 1.25rem;
+    }
+}
+
+/*iPhone SE and smaller*/
+@media screen and (max-width: 375px) {
+    .container {
+        @apply px-2;
+    }
+
+    h1 {
+        @apply text-2xl;
+    }
+
+    .grid-cols-1 {
+        @apply gap-4;
+    }
+}

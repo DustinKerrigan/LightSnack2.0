@@ -4,6 +4,7 @@ import About from './components/About';
 import Nil from './components/Nil';
 import Programs from './components/Programs';
 import Shop from './components/Shop';
+import './styles/responsive.css';
 import {BrowserRouter as Router, Route, Routes, useLocation} from 'react-router-dom';
 
 function AppWrapper() {

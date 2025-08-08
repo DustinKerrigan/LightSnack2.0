@@ -81,32 +81,32 @@ const Intro = () => {
         <section id="about-section" className="py-16 bg-gradient-to-b from-white to-gray-50 relative z-0">
             <div className="absolute right-0 top-0 flex flex-col gap-2 z-50 md:mr-4 md:mt-4">
                 <a href="https://www.tiktok.com/@cristian.orth?lang=en" 
-                className="bg-black text-white p-3 hover:translate-x-[-8px] transition-transform duration-300 flex items-center gap-2">
-                    <i className="fab fa-tiktok text-xl"></i>
-                    <span className="hidden group-hover:block">TikTok</span>
+                className="bg-black text-white p-2 md:p-3 hover:translate-x-[-8px] transition-transform duration-300 flex items-center gap-2">
+                    <i className="fab fa-tiktok text-lg md:text-xl"></i>
+                    <span className="hidden group-hover:block text-sm md:text-base">TikTok</span>
                 </a>
                 <a href="https://www.linkedin.com/company/light-snack/" 
-                className="bg-[#0077b5] text-white p-3 hover:translate-x-[-8px] transition-transform duration-300 flex items-center gap-2">
-                    <i className="fab fa-linkedin-in text-xl"></i>
-                    <span className="hidden group-hover:block">LinkedIn</span>
+                className="bg-[#0077b5] text-white p2 md:p-3 hover:translate-x-[-8px] transition-transform duration-300 flex items-center gap-2">
+                    <i className="fab fa-linkedin text-lg md:text-xl"></i>
+                    <span className="hidden group-hover:block text-sm md:text-base">LinkedIn</span>
                 </a>
                 <a href="https://www.instagram.com/lightsnackllc/" 
-                className="bg-[#E4405F] text-white p-3 hover:translate-x-[-8px] transition-transform duration-300 flex items-center gap-2">
-                    <i className="fab fa-instagram text-xl"></i>
-                    <span className="hidden group-hover:block">Instagram</span>
+                className="bg-[#E4405F] text-white p2 md:p-3 hover:translate-x-[-8px] transition-transform duration-300 flex items-center gap-2">
+                    <i className="fab fa-instagram text-lg md:text-xl"></i>
+                    <span className="hidden group-hover:block text-sm md:text-base">Instagram</span>
                 </a>
             </div>
             <div className="container mx-auto px-6">
                 <div className="max-w-6xl mx-auto p-8">
                     <div className="relative flex flex-col md:flex-row gap-8">
-                        <div className="md:w-1/2 relative">
+                        <div className="md:w-1/2 relative px-4 md:px-0">
                             <img 
                                 src="slide1.PNG" 
                                 alt="Light Snack" 
                                 className="w-full h-full object-cover rounded-lg shadow-xl"
                             />
-                            <h2 className="absolute -right-[16rem] -top-2 text-6xl font-bold tracking-widest z-10">
-                            <span className="pb-4 border-b-4 border-red-600">ABOUT</span> US
+                            <h2 className="absolute -right-4 md:-right-[16rem] -top-2 text-3xl md:text-6xl font-bold tracking-widest z-10">
+                            <span className="pb-2 md:pb-4 border-b-4 border-red-600">ABOUT</span> US
                             </h2>
                         </div>
         
