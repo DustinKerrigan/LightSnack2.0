@@ -81,17 +81,17 @@ const Intro = () => {
         <section id="about-section" className="py-16 bg-gradient-to-b from-white to-gray-50 relative z-0">
             <div className="absolute right-0 top-0 flex flex-col gap-2 z-50 md:mr-4 md:mt-4">
                 <a href="https://www.tiktok.com/@cristian.orth?lang=en" 
-                className="bg-black text-white p-2 md:p-3 hover:translate-x-[-8px] transition-transform duration-300 flex items-center gap-2">
+                className="bg-black text-white w-8 h-8 md:w-auto md:h-auto p-2 md:p-3 hover:translate-x-[-8px] transition-transform duration-300 flex items-center justify-center md:justify-start gap-2">
                     <i className="fab fa-tiktok text-lg md:text-xl"></i>
                     <span className="hidden group-hover:block text-sm md:text-base">TikTok</span>
                 </a>
                 <a href="https://www.linkedin.com/company/light-snack/" 
-                className="bg-[#0077b5] text-white p2 md:p-3 hover:translate-x-[-8px] transition-transform duration-300 flex items-center gap-2">
+                className="bg-[#0077b5] text-white w-8 h-8 md:w-auto md:h-auto p-2 md:p-3 hover:translate-x-[-8px] transition-transform duration-300 flex items-center justify-center md:justify-start gap-2">
                     <i className="fab fa-linkedin text-lg md:text-xl"></i>
                     <span className="hidden group-hover:block text-sm md:text-base">LinkedIn</span>
                 </a>
                 <a href="https://www.instagram.com/lightsnackllc/" 
-                className="bg-[#E4405F] text-white p2 md:p-3 hover:translate-x-[-8px] transition-transform duration-300 flex items-center gap-2">
+                className="bg-[#E4405F] text-white w-8 h-8 md:w-auto md:h-auto p-2 md:p-3 hover:translate-x-[-8px] transition-transform duration-300 flex items-center justify-center md:justify-start gap-2">
                     <i className="fab fa-instagram text-lg md:text-xl"></i>
                     <span className="hidden group-hover:block text-sm md:text-base">Instagram</span>
                 </a>

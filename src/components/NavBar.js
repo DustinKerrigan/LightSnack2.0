@@ -89,20 +89,20 @@ const NavBar = () => {
                 {/* Mobile navigation dropdown */}
                 {isOpen && (
                     <div className="md:hidden bg-white w-full rounded-lg shadow-lg"> 
-                        <Link 
+                        <a 
                             className="block text-black hover:bg-red-600 hover:text-white p-4 transition-colors duration-200" 
-                            to="/about"
+                            href="#about-section"
                             onClick={() => setIsOpen(false)}
                         >
                             About
-                        </Link>
-                        <Link 
+                        </a>
+                        <a 
                             className="block text-black hover:bg-red-600 hover:text-white p-4 transition-colors duration-200" 
-                            to="/contact"
+                            href="#contact-section"
                             onClick={() => setIsOpen(false)}
                         >
                             Contact
-                        </Link>
+                        </a>
                         <Link 
                             className="block text-black hover:bg-red-600 hover:text-white p-4 transition-colors duration-200" 
                             to="/nil"
