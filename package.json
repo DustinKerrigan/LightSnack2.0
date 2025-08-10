@@ -2,7 +2,7 @@
   "name": "light-snack",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://your-username.github.io/your-repo-name",
+  "homepage": "https://DustinKerrigan.github.io/your-repo-name",
   "dependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@emailjs/browser": "^4.4.1",
