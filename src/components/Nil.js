@@ -8,8 +8,8 @@ const athletes = [
         name: "Dylan Cook",
         school: "Morehead State",
         sport: "Football",
-        image: "dylanAction.png", //working on photo
-        collegeLogo: "morehead2.png", //working on logo
+        image: "dylanAction.PNG", //working on photo
+        collegeLogo: "morehead2.PNG", //working on logo
         position: "Defensive Back",
         number: 12,
         accolades: "Arizona 1st Team All-State",

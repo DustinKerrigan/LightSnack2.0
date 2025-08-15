@@ -6,7 +6,7 @@ const products = [
         name: 'Original Cotton Tee',
         description: 'Lightweight and breathable, perfect for workouts.',
         price: '$22.00',
-        image: 'whiteShort.png',
+        image: 'whiteShort.PNG',
         link: 'https://buy.stripe.com/fZe2b68h322x6B25kk',
         status: 'Available',
         imageStyle: 'scale-75'
@@ -15,7 +15,7 @@ const products = [
         name: '"Frat" Black Edition',
         description: 'Classic black with Light Snack logo.',
         price: '$22.00',
-        image: 'blackCotton.png',
+        image: 'blackCotton.PNG',
         link: 'https://buy.stripe.com/4gwg1WcxjfTn9Ne8wy',
         status: 'Available',
         imageStyle: 'scale-75'
@@ -24,7 +24,7 @@ const products = [
         name: 'Performance Black Short-Sleeve',
         description: 'Clean white performance wear.',
         price: '$24.00',
-        image: 'blackPerformance.png',
+        image: 'blackPerformance.PNG',
         link: 'https://buy.stripe.com/4gweXSdBn9uZ3oQbIL',
         status: 'Available',
         imageStyle: 'scale-75'
@@ -33,7 +33,7 @@ const products = [
         name: 'Performance White Short-Sleeve',
         description: 'Neutral tone with breathable fabric.',
         price: '$24.00',
-        image: 'whiteShort.png',
+        image: 'whiteShort.PNG',
         link: '/shop',
         status: 'Available',
         imageStyle: 'scale-75'
@@ -42,7 +42,7 @@ const products = [
         name: 'Performance Black Long-Sleeve',
         description: 'Cozy hoodie with Light Snack logo.',
         price: '$25.00',
-        image: 'blackLong.png',
+        image: 'blackLong.PNG',
         link: 'https://buy.stripe.com/14k7vqgNz22x6B2004',
         status: 'Available',
         imageStyle: 'scale-75'
@@ -51,7 +51,7 @@ const products = [
         name: 'Performance White Long-Sleeve',
         description: 'Classic fit with Light Snack embroidery.',
         price: '$25.00',
-        image: 'whiteLong.png',
+        image: 'whiteLong.PNG',
         link: '/shop',
         status: 'Available',
         imageStyle: 'scale-75'
