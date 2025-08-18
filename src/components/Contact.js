@@ -6,7 +6,7 @@ const Contact = () => {
         const handleSubmit = async (e) => {
         e.preventDefault();
         const data = new FormData(e.target);
-        await fetch('http://localhost:5000/api/contact', {
+        await fetch('http://34.134.148.220:5000/api/contact', {
             method: 'POST',
             body: JSON.stringify({
             firstName: data.get('firstName'),
