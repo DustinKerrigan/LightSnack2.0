@@ -1,0 +1,46 @@
+name: Deploy to S3
+
+on:
+  push:
+    branches: [ main ]  # change if your default branch is different
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: read
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install deps
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ secrets.AWS_REGION }}
+
+      # Fast, simple deploy:
+      - name: Sync build/ to S3
+        run: aws s3 sync build/ s3://${{ secrets.S3_BUCKET }} --delete
+
+      # (Optional) Better caching: long-cache static files, no-cache index.html
+      # Uncomment these two steps if you want smarter cache headers.
+      # - name: Cache static assets
+      #   run: aws s3 cp build/ s3://${{ secrets.S3_BUCKET }}/ --recursive --exclude index.html --cache-control "max-age=31536000,public" --metadata-directive REPLACE
+      # - name: No-cache index.html
+      #   run: aws s3 cp build/index.html s3://${{ secrets.S3_BUCKET }}/index.html --cache-control "no-cache" --metadata-directive REPLACE
