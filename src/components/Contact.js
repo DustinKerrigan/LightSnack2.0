@@ -6,7 +6,7 @@ const Contact = () => {
         const handleSubmit = async (e) => {
         e.preventDefault();
         const data = new FormData(e.target);
-        await fetch('https://donation-nashville-quoted-intensive.trycloudflare.com/api/contact', {
+        await fetch('https://groove-patents-hiking-contribute.trycloudflare.com/api/contact', {
             method: 'POST',
             body: JSON.stringify({
             firstName: data.get('firstName'),
