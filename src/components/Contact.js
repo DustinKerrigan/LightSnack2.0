@@ -6,7 +6,7 @@ const Contact = () => {
         const handleSubmit = async (e) => {
         e.preventDefault();
         const data = new FormData(e.target);
-        await fetch('https://levy-transcripts-websites-id.trycloudflare.com/api/contact', {
+        await fetch('https://atlas-barbie-slides-rick.trycloudflare.com', {
             method: 'POST',
             body: JSON.stringify({
             firstName: data.get('firstName'),
