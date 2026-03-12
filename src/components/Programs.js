@@ -60,13 +60,7 @@ const Programs = () => {
             >
               ← Back to Home
             </button>
-            <button
-              onClick={() => navigate('/shop')} 
-              className="text-black hover:text-red-600 transition text-xl"
-              aria-label="Go to Shop"
-            >
-              <FontAwesomeIcon icon={faShoppingCart} />
-            </button>
+            {/*shop icon would go here*/}
           </div>
     <h1 className="text-4xl font-bebas text-black text-center mb-10">Custom Programs</h1>
         <div className="w-full max-w-4xl space-y-8 mx-auto px-4">

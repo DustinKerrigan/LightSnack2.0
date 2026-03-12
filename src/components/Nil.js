@@ -43,13 +43,7 @@ const Nil = () => {
                     >
                         ← Back to Home
                     </button>
-                    <button
-                        onClick={() => navigate('/shop')} 
-                        className="text-black hover:text-red-600 transition text-xl"
-                        aria-label="Go to Shop"
-                    >
-                        <FontAwesomeIcon icon={faShoppingCart} />
-                    </button>
+                  {/*shop would go here*/}
                 </div>
             <h1 className="text-4xl font-bebas text-black text-center mb-10">Our Athletes</h1>
             <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 px-4">
