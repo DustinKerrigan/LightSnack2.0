@@ -79,11 +79,6 @@ const NavBar = () => {
                         >
                         Programs
                     </Link>
-                    <Link className={`font-semibold relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 hover:after:w-full after:transition-all after:duration-300 
-                    ${isScrolled 
-                        ? 'text-white hover:text-black after:bg-black' 
-                        : 'text-black hover:text-red-600 after:bg-red-600'
-                    }`} to="/shop"><i className="fas fa-shopping-cart text-xl"></i></Link>
                 </div>
 
                 {/* Mobile navigation dropdown */}
@@ -116,13 +111,6 @@ const NavBar = () => {
                             onClick={() => setIsOpen(false)}
                         >
                             Programs
-                        </Link>
-                        <Link 
-                            className="block text-black hover:bg-red-600 hover:text-white p-4 transition-colors duration-200" 
-                            to="/shop"
-                            onClick={() => setIsOpen(false)}
-                        >
-                            <i className="fas fa-shopping-cart text-xl"></i>
                         </Link>
                     </div>
                 )}
