@@ -39,19 +39,6 @@ const Intro = () => {
                 <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 sm:grid-cols-2 lg:grid-cols-3">
                     <div className="flex flex-col items-center p-6 space-y-4 bg-white rounded-xl shadow-lg transition-transform duration-300 hover:scale-105 border-2 border-black">
                             <div className="w-32 h-32 bg-gray-100 rounded-full overflow-hidden flex items-center justify-center"> 
-                                <img src = 'dk.JPG' alt = "Logo" className = "w-full h-full object-cover object-center"></img>
-                            </div>
-                            <div className="text-center">
-                                <h3 className="text-xl font-bold text-gray-900">Dustin Kerrigan</h3>
-                                <p className="text-sm text-gray-500 font-medium mt-1">Software Engineer Intern</p>
-                            </div>
-                            <p className="text-center text-gray-600 text-sm">
-                                Computer Science student at the University of North Florida.
-                            </p>
-                    </div>
-
-                    <div className="flex flex-col items-center p-6 space-y-4 bg-white rounded-xl shadow-lg transition-transform duration-300 hover:scale-105 border-2 border-black">
-                            <div className="w-32 h-32 bg-gray-100 rounded-full overflow-hidden flex items-center justify-center"> 
                                 <img src = 'dontFold2.JPG' alt = "Logo" className = "w-full h-full object-cover object-center"></img>
                             </div>
                             <div className="text-center">
